@@ -1,0 +1,26 @@
+{
+  "name": "@types/angularjs-dragula",
+  "version": "1.0.0",
+  "description": "TypeScript definitions for angularjs-dragula",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xemlock/types-angularjs-dragula.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xemlock/types-angularjs-dragula/issues"
+  },
+  "homepage": "https://github.com/xemlock/types-angularjs-dragula#readme",
+  "contributors": [
+    {
+      "name": "xemlock",
+      "url": "https://github.com/xemlock"
+    }
+  ],
+  "dependencies": {
+    "@types/angular": "*",
+    "@types/dragula": "^2.1.34"
+  },
+  "main": "",
+  "types": "angular-dragula"
+}
