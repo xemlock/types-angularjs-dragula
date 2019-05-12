@@ -1,3 +1,7 @@
+// Type definitions for angularjs-dragula 2.0.0
+// Project: https://github.com/bevacqua/angularjs-dragula
+// Definitions by: xemlock <https://github.com/xemlock>
+
 import * as ng from 'angular';
 import * as d from 'dragula';
 

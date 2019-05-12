@@ -22,5 +22,5 @@
     "@types/dragula": "^2.1.34"
   },
   "main": "",
-  "types": "angular-dragula"
+  "types": "index"
 }
