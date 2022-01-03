@@ -1,11 +1,25 @@
-// Type definitions for angularjs-dragula 1.2
+// Type definitions for angularjs-dragula 2.0
 // Project: https://github.com/bevacqua/angularjs-dragula
 // Definitions by: xemlock <https://github.com/xemlock>
 
-/// <reference path="./angular-dragula.d.ts" />
+import * as ng from 'angular';
+import * as d from 'dragula';
 
-// angularjs-dragula 1.2.* has broken "main" value in its package.json, so one
-// has to import 'angularjs-dragula/angular-dragula' instead of 'angularjs-dragula'.
+declare module 'angular' {
+  namespace dragula {
+    interface DragulaService {
+      add(scope: ng.IScope, name: string, drake: d.Drake): Bag;
+      find(scope: ng.IScope, name: string): Bag | undefined;
+      destroy(scope: ng.IScope, name: string): void;
+      handleModels(scope: ng.IScope, drake: d.Drake): void;
+      options(scope: ng.IScope, name: string, options: d.DragulaOptions): void;
+    }
+    interface Bag {
+      name: string;
+      drake: d.Drake;
+    }
+  }
+}
 
-declare var _: undefined;
+declare var _: (angular: ng.IAngularStatic) => string;
 export = _;
